@@ -20,14 +20,7 @@ public class PolicyServiceImpl implements PolicyService {
 	@Autowired
 	private PolicyRepository policyRepository;
 
-    @Override
-    public List<PolicyDto> getAllPolicy() {
-        List<Policy> policies = policyRepository.findAll();
-        List<PolicyDto> policyDtos = policies.stream()
-                .map(PolicyMapper::mapToPolicyDto)
-                .collect(Collectors.toList());
-        return policyDtos;
-    }
+
 
     @Override
     public PolicyDto updatePolicy(Long policyId, PolicyDto policyDto) {
