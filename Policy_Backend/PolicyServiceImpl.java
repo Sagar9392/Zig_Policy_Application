@@ -37,8 +37,4 @@ public class PolicyServiceImpl implements PolicyService {
         return PolicyMapper.mapToPolicyDto(existingPolicy);
     }
 
-   
-
-
-
 }
